@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
-  base: mode === 'production' ? "/deepak-portfolio" : "/", // Base path for GitHub Pages only in production
+  base: mode === 'production' ? "/Deepak-Portfolio" : "/", // Base path for GitHub Pages only in production
   server: {
     port: 5173,
     open: true, // Automatically open browser

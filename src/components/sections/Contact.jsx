@@ -201,11 +201,11 @@ export const Contact = ({ isDarkMode }) => {
                       <div>
                         <h4 className={`text-sm font-semibold ${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>Email</h4>
                         <a 
-                          href="mailto:deepakreddyiic1234@gmail.com" 
+                          href="mailto:kilarudeepakreddy@gmail.com" 
                           className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600 font-medium hover:underline transition-colors"
                           aria-label="Send email to Deepak"
                         >
-                          deepakreddyiic1234@gmail.com
+                          kilarudeepakreddy@gmail.com
                         </a>
                       </div>
                     </div>

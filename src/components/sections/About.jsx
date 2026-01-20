@@ -25,10 +25,10 @@ export const About = () => {
                 <h3 className="text-2xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">About Me</h3>
                 <div className="space-y-4">
                   <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-                    I'm a Software Engineer with over 3.5 years of experience building scalable web applications and cloud-native solutions with Java, Python, C#, Rust, React.js and .NET Core. I specialize in microservices, CI/CD pipelines, and deploying secure systems on Azure, AWS, and GCP.
+                    Full-Stack Software Engineer with 4+ years of experience building and scaling cloud-native web and backend systems. Strong expertise in Java, Python, Spring Boot, microservices, and React/Angular/TypeScript/JavaScript, with end-to-end ownership from development to production.
                   </p>
                   <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-                    I recently earned my Master's in Information Technology and Management from Illinois Institute of Technology. I'm passionate about clean, maintainable code and leveraging Docker, Kubernetes, and Terraform to solve real-world challenges.
+                    At USAA and Dell, delivered platforms serving millions of users with 99.99% availability, improved latency, and faster releases using AWS, Kafka, Terraform, and CI/CD automation. Master's in IT from Illinois Institute of Technology.
                   </p>
                 </div>
               </div>

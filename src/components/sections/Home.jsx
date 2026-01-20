@@ -21,15 +21,15 @@ export const Home = ({ isDarkMode }) => {
               </div>
             </div>
             <div className="mt-4 md:mt-2 text-center md:text-left">
-              <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 text-xl sm:text-2xl mb-1 font-medium">Hey, I am</p>
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 text-xl sm:text-2xl mb-1 font-medium font-mono">Code | Cloud | Curiosity</p>
               <h1 className={`text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-4 ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
-                Deepak Reddy
+                Deepak Reddy Kilaru
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 font-semibold mb-1 md:mb-2">
-                Java Full Stack Developer
+                Software Engineer
               </h2>
               <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} text-base sm:text-lg`}>
-                Chicago, IL, USA
+                San Antonio, TX, USA
               </p>
             </div>
           </div>

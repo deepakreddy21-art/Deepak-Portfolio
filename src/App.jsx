@@ -9,6 +9,7 @@ import { Projects } from "./components/sections/Projects";
 import { Testimonials } from "./components/sections/Testimonials";
 import { Skills } from "./components/sections/Skills";
 import { Contact } from "./components/sections/Contact";
+import { WhatIDo } from "./components/sections/WhatIDo";
 import { Footer } from "./components/Footer";
 import { SocialSidebar } from "./components/SocialSidebar";
 import { SectionSeparator } from "./components/SectionSeparator";
@@ -64,6 +65,10 @@ function App() {
       {/* About Me Section */}
       <AboutMe isDarkMode={isDarkMode} />
       <SectionSeparator variant="wave2" isDarkMode={isDarkMode} />
+      
+      {/* What I Do Section */}
+      <WhatIDo isDarkMode={isDarkMode} />
+      <SectionSeparator variant="wave3" isDarkMode={isDarkMode} />
       
       {/* Testimonials Section (Skills) */}
       <Testimonials isDarkMode={isDarkMode} />

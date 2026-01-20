@@ -1,4 +1,4 @@
-# Deepak Reddy's Portfolio
+# Deepak Reddy Kilaru's Portfolio
 
 This is my personal portfolio website built using React, Vite, and TailwindCSS. The project showcases my skills, experience, and projects with a modern, responsive design.
 

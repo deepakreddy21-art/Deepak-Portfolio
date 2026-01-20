@@ -16,13 +16,13 @@ export const AboutMe = ({ isDarkMode }) => {
             <div className="space-y-6">
               <div className="space-y-4">
                 <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} text-base md:text-lg leading-relaxed`}>
-                  I'm a Java Full Stack Developer with 5+ years of experience building scalable, cloud-native applications across finance, healthcare, and telecom. I specialize in Java 17, Spring Boot, microservices, and modern front-end frameworks like React, Angular, and TypeScript, delivering seamless, user-focused solutions that perform at scale.
+                  Full-Stack Software Engineer with 4+ years of experience building and scaling cloud-native web and backend systems. Strong expertise in Java, Python, Spring Boot, microservices, and React/Angular/TypeScript/JavaScript, with end-to-end ownership from development to production.
                 </p>
                 <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} text-base md:text-lg leading-relaxed`}>
-                  My work spans cloud migration, DevOps automation, and performance optimization, with proven results such as achieving 99.99% uptime, reducing release cycles by 80%, and improving application load times for millions of users. I'm skilled in deploying high-availability systems on AWS (Lambda, API Gateway, ECS, DynamoDB) and streamlining delivery through CI/CD pipelines using GitLab, Jenkins, and Terraform.
+                  At USAA and Dell, delivered platforms serving millions of users with 99.99% availability, improved latency, and faster releases using AWS, Kafka, Terraform, and CI/CD automation.
                 </p>
                 <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} text-base md:text-lg leading-relaxed`}>
-                  I hold a Master's in Information Technology and Management from the Illinois Institute of Technology, USA. Passionate about continuous learning, I thrive in Agile teams, mentor peers, and explore emerging cloud and automation technologies to push boundaries and deliver measurable impact.
+                  Master's in IT from Illinois Institute of Technology.
                 </p>
               </div>
             </div>

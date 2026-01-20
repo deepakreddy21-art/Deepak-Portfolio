@@ -94,6 +94,56 @@ h1, h2, h3, h4, h5, h6, .code-font {
   .animate-pulse-slow {
     animation: pulse 3s infinite;
   }
+
+  @keyframes skeleton-loading {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: calc(200px + 100%) 0;
+    }
+  }
+
+  .animate-skeleton {
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+    background: linear-gradient(
+      90deg,
+      var(--skeleton-base, #f0f0f0) 0px,
+      var(--skeleton-highlight, #e0e0e0) 40px,
+      var(--skeleton-base, #f0f0f0) 80px
+    );
+    background-size: 200px 100%;
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out;
+  }
+
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.5s ease-out;
+  }
 }
 
 /* Components */

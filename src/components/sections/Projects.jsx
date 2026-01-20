@@ -3,46 +3,28 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const Projects = ({ isDarkMode }) => {
   const projects = [
     {
-      title: "Uber Clone",
-      description: "Built a full-stack ride-sharing application with real-time location tracking, payment integration, and driver-rider matching system",
-      technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
+      title: "Compliance Copilot",
+      description: "AI-powered compliance assistant for SaaS startups. Automates compliance workflows and helps navigate regulatory requirements.",
+      technologies: ["TypeScript", "AI/ML", "SaaS"],
       gradient: "from-blue-500 to-cyan-500",
-      bgGradient: "from-blue-50 to-cyan-50"
+      bgGradient: "from-blue-50 to-cyan-50",
+      githubUrl: "https://github.com/deepakreddy21-art/compliance-copilot"
     },
     {
-      title: "Banking Microservices App",
-      description: "Built a microservices-based banking application with a scalable architecture",
-      technologies: ["React", "Node.js", "Docker"],
+      title: "Uber Clone",
+      description: "Full Stack Uber Clone with Spring Boot, React Native, and ML Microservice. Real-time ride-sharing application with driver-rider matching.",
+      technologies: ["Spring Boot", "React Native", "TypeScript", "ML Microservice"],
       gradient: "from-emerald-500 to-teal-500",
-      bgGradient: "from-emerald-50 to-teal-50"
+      bgGradient: "from-emerald-50 to-teal-50",
+      githubUrl: "https://github.com/deepakreddy21-art/uber-clone"
     },
     {
-      title: "Retail Analytics Dashboard",
-      description: "Created an analytics dashboard for retail data visualization and reporting",
-      technologies: ["Python", "Flask", "Javascript"],
+      title: "Turbo Auto Rentals",
+      description: "Automated car rental platform with streamlined booking and management system.",
+      technologies: ["TypeScript", "Full Stack"],
       gradient: "from-purple-500 to-violet-500",
-      bgGradient: "from-purple-50 to-violet-50"
-    },
-    {
-      title: "Personal Portfolio Website",
-      description: "Designed and developed this responsive portfolio website with modern UI/UX principles and animations",
-      technologies: ["React", "TailwindCSS", "Vite"],
-      gradient: "from-indigo-500 to-purple-500",
-      bgGradient: "from-indigo-50 to-purple-50"
-    },
-    {
-      title: "AI-Powered Image Generator",
-      description: "Created a web application that uses machine learning to generate custom images based on text prompts",
-      technologies: ["Python", "TensorFlow", "React", "Flask"],
-      gradient: "from-rose-500 to-pink-500",
-      bgGradient: "from-rose-50 to-pink-50"
-    },
-    {
-      title: "Smart Home IoT Dashboard",
-      description: "Developed a real-time dashboard for monitoring and controlling smart home devices with secure authentication",
-      technologies: ["React", "Node.js", "MQTT", "MongoDB"],
-      gradient: "from-amber-500 to-orange-500",
-      bgGradient: "from-amber-50 to-orange-50"
+      bgGradient: "from-purple-50 to-violet-50",
+      githubUrl: "https://github.com/deepakreddy21-art/turboautorentals"
     },
   ];
 
@@ -60,9 +42,12 @@ export const Projects = ({ isDarkMode }) => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <div 
+              <a
                 key={index}
-                className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} rounded-lg overflow-hidden border shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl`}
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} rounded-lg overflow-hidden border shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer block`}
               >
                 <div className={`h-3 bg-gradient-to-r ${project.gradient}`}></div>
                 <div className="p-6">
@@ -85,7 +70,7 @@ export const Projects = ({ isDarkMode }) => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </RevealOnScroll>

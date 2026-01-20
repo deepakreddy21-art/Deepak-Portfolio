@@ -49,7 +49,7 @@ export const Skills = ({ isDarkMode }) => {
         { name: "Jenkins", icon: "🤖", level: "Intermediate" }
       ],
       gradient: "from-orange-500 to-red-500"
-    }
+    },
   ];
 
   return (

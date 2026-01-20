@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-export const Terminal = ({ isDarkMode, portfolioData, toggleDarkMode }) => {
+export const Terminal = ({ isDarkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const [history, setHistory] = useState([
@@ -30,81 +30,57 @@ export const Terminal = ({ isDarkMode, portfolioData, toggleDarkMode }) => {
   // Portfolio data for terminal commands
   const data = {
     skills: {
-      frontend: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
-      backend: ["Java", "Spring Boot", "Node.js", "Python", "Express", "RESTful APIs"],
-      devops: ["Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Jenkins"],
-      cloud: ["AWS", "Azure", "GCP", "Serverless", "Microservices"],
-      databases: ["MongoDB", "PostgreSQL", "MySQL", "Oracle", "Redis"]
+      languages: ["Java", "Python", "Go", "JavaScript (ES6+)", "TypeScript", "SQL"],
+      frontend: ["HTML5", "CSS3", "Node.js", "React", "Angular", "Redux"],
+      backend: ["Spring Boot", "Spring Security", "REST APIs", "GraphQL", "gRPC", "HTTP", "JSON", "Serverless APIs"],
+      devops: ["AWS", "GCP", "Git", "GitHub Actions", "GitLab", "Jenkins", "Terraform", "IaC", "Docker", "Kubernetes"],
+      databases: ["Apache Kafka", "ActiveMQ", "RDBS", "DynamoDB", "NoSQL", "PostgreSQL"],
+      testing: ["JUnit", "pytest", "Cypress", "Selenium", "Vitest", "Prometheus", "Grafana", "Elasticsearch", "Kibana"]
     },
     projects: [
       {
-        name: "Pharma Cloud Platform",
-        description: "Developed a cloud-based platform for pharmaceutical data management and analytics.",
-        technologies: ["Java", "Spring Boot", "AWS"]
+        name: "Compliance Copilot",
+        description: "AI-powered compliance assistant for SaaS startups. Automates compliance workflows and helps navigate regulatory requirements.",
+        technologies: ["TypeScript", "AI/ML", "SaaS"]
       },
       {
-        name: "Banking Microservices App",
-        description: "Built a microservices-based banking application with a scalable architecture",
-        technologies: ["React", "Node.js", "Docker"]
+        name: "Uber Clone",
+        description: "Full Stack Uber Clone with Spring Boot, React Native, and ML Microservice. Real-time ride-sharing application with driver-rider matching.",
+        technologies: ["Spring Boot", "React Native", "TypeScript", "ML Microservice"]
       },
       {
-        name: "Retail Analytics Dashboard",
-        description: "Created an analytics dashboard for retail data visualization and reporting",
-        technologies: ["Python", "Flask", "Javascript"]
-      },
-      {
-        name: "Personal Portfolio Website",
-        description: "Designed and developed this responsive portfolio website with modern UI/UX principles",
-        technologies: ["React", "TailwindCSS", "Vite"]
-      },
-      {
-        name: "AI-Powered Image Generator",
-        description: "Created a web application that uses machine learning to generate custom images based on text prompts",
-        technologies: ["Python", "TensorFlow", "React", "Flask"]
+        name: "Turbo Auto Rentals",
+        description: "Automated car rental platform with streamlined booking and management system.",
+        technologies: ["TypeScript", "Full Stack"]
       }
     ],
     experience: [
       {
         company: "USAA",
-        period: "May 2025 - Present",
-        position: "Java Full Stack Developer"
+        period: "Jan 2024 - Present",
+        position: "Software Engineer"
       },
       {
-        company: "AbbVie",
-        period: "Feb 2024 - Jan 2025",
-        position: "Java Full Stack Developer"
-      },
-      {
-        company: "BMO Harris Bank",
-        period: "May 2023 - Jan 2024",
-        position: "Java Full Stack Developer"
-      },
-      {
-        company: "Airtel",
-        period: "Sep 2021 - Dec 2022",
-        position: "Java Full Stack Developer"
-      },
-      {
-        company: "CIBC Bank",
-        period: "Jun 2020 - Jun 2021",
-        position: "Java Developer"
+        company: "Dell Technologies",
+        period: "Dec 2020 - Dec 2022",
+        position: "Software Engineer"
       }
     ],
     contact: {
-      email: "deepakreddyiitc1234@gmail.com",
+      email: "kilarudeepakreddy@gmail.com",
       github: "github.com/deepakreddy21-art",
       linkedin: "linkedin.com/in/deepak-reddy-3a911924b",
       instagram: "instagram.com/deepakreddy_22",
       twitter: "twitter.com/kdr_9837"
     },
     profile: {
-      name: "Deepak Reddy",
+      name: "Deepak Reddy Kilaru",
       degree: "Master's in Computer Science, Illinois Institute of Technology",
-      role: "Full Stack Developer",
+      role: "Software Engineer",
       portfolioUrl: "deepakreddy21-art.github.io/deepak-portfolio"
     },
     stats: {
-      projects: 5,
+      projects: 3,
       experienceYears: 4,
       skillsCount: 25,
       certifications: 3
@@ -212,7 +188,7 @@ export const Terminal = ({ isDarkMode, portfolioData, toggleDarkMode }) => {
           { type: 'system', content: `${data.profile.name} - ${data.profile.role}` },
           { type: 'output', content: data.profile.degree },
           { type: 'output', content: `Portfolio: ${data.profile.portfolioUrl}` },
-          { type: 'output', content: 'Java Full Stack Developer based in Chicago, IL' }
+          { type: 'output', content: 'Software Engineer based in San Antonio, TX' }
         ];
       }
     },

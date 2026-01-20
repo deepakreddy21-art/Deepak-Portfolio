@@ -80,7 +80,7 @@ export const AIChatBubble = ({ isDarkMode }) => {
         {
           degree: "Master's in Information Technology and Management",
           school: "Illinois Institute of Technology",
-          location: "Chicago, IL",
+          location: "San Antonio, TX",
           year: "",
           details: "Focused on advanced software development and cloud computing"
         }
@@ -94,93 +94,51 @@ export const AIChatBubble = ({ isDarkMode }) => {
     workExperience: [
       {
         company: "USAA",
-        position: "Java Full Stack Developer",
-        duration: "May 2025 - Present",
+        position: "Software Engineer",
+        duration: "Jan 2024 - Present",
         responsibilities: [
-          "Developing and maintaining enterprise Java applications with Spring Boot and microservices architecture",
-          "Implementing and managing AWS cloud infrastructure including EC2, S3, Lambda, and RDS services",
-          "Managing DevOps processes using GitLab CI/CD pipelines, Terraform for infrastructure as code, and container orchestration"
+          "Engineered scalable backend services (Java, Python, REST, GraphQL) on AWS sustaining millions of daily requests with 99.99% availability, and developed performant frontend workflows (React, Redux, TypeScript) improving page latency by 28%",
+          "Orchestrated event-driven architecture with Kafka, PostgreSQL, and Redis, offloading synchronous API paths by 35% during peak traffic. Standardized IaC with Terraform and Docker, reducing environment provisioning by 40%",
+          "Enforced production quality through Cypress, WebdriverIO, and unit tests in CI/CD pipelines, preventing 45% of regressions. Operationalized observability with Datadog and ELK Stack, achieving p95 response times under 200ms"
         ]
       },
       {
-        company: "AbbVie",
-        position: "Java Full Stack Developer",
-        duration: "Feb 2024 - Jan 2025",
+        company: "Dell Technologies",
+        position: "Software Engineer",
+        duration: "Dec 2020 - Dec 2022",
         responsibilities: [
-          "Developing and maintaining enterprise Java applications with Spring Boot",
-          "Building responsive front-end interfaces using modern JavaScript frameworks",
-          "Led the migration of monolithic applications to microservices architecture, improving scalability and maintainability"
-        ]
-      },
-      {
-        company: "BMO Harris Bank",
-        position: "Java Full Stack Developer",
-        duration: "May 2023 - Jan 2024",
-        responsibilities: [
-          "Developed and maintained banking applications using Java, Spring, and Angular",
-          "Implemented RESTful APIs for financial data processing and transaction management",
-          "Collaborated with business stakeholders to translate requirements into technical solutions"
-        ]
-      },
-      {
-        company: "Airtel",
-        position: "Java Full Stack Developer",
-        duration: "Sep 2021 - Dec 2022",
-        responsibilities: [
-          "Built and maintained telecommunications applications using Java and related technologies",
-          "Implemented front-end interfaces with React for customer-facing applications",
-          "Optimized database queries and enhanced application performance for high-traffic services"
-        ]
-      },
-      {
-        company: "CIBC Bank",
-        position: "Java Developer",
-        duration: "Jun 2020 - Jun 2021",
-        responsibilities: [
-          "Developed banking software solutions using Java and Spring framework",
-          "Created and maintained database schemas, stored procedures, and queries",
-          "Implemented unit and integration tests to ensure application reliability"
+          "Delivered full-stack applications (Java, Spring Boot, React, REST APIs) handling thousands of concurrent sessions. Implemented Node.js and Python integrations connecting internal platforms, reducing manual processing by 20%",
+          "Introduced Kafka message-based processing and event-driven workflows with Postgres and DynamoDB, reducing request latency by 27% and cutting database contention by 35% during peak loads",
+          "Implemented Selenium UI tests and backend validation suites, decreasing post-release defects by 38% across successive deployments"
         ]
       }
     ],
     techStack: {
-      frontend: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
-      backend: ["Node.js", "Python", "Java", "Spring Boot", "Express", "Django", "RESTful APIs"],
-      devops: ["Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Jenkins"],
-      cloud: ["AWS", "Azure", "GCP", "Serverless", "Microservices"],
-      databases: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"],
-      other: ["Agile SDLC", "Scrum", "Kanban", "Waterfall", "JIRA", "Spark", "Splunk", "ELK Stack"]
+      languages: ["Java", "Python", "Go", "JavaScript (ES6+)", "TypeScript", "SQL"],
+      frontend: ["HTML5", "CSS3", "Node.js", "React", "Angular", "Redux"],
+      backend: ["Spring Boot", "Spring Security", "REST APIs", "GraphQL", "gRPC", "HTTP", "JSON", "Serverless APIs"],
+      devops: ["AWS", "GCP", "Git", "GitHub Actions", "GitLab", "Jenkins", "Terraform", "IaC", "Docker", "Kubernetes"],
+      databases: ["Apache Kafka", "ActiveMQ", "RDBS", "DynamoDB", "NoSQL", "PostgreSQL"],
+      testing: ["JUnit", "pytest", "Cypress", "Selenium", "Vitest", "Prometheus", "Grafana", "Elasticsearch", "Kibana"]
     },
     projects: [
       {
-        name: "Pharma Cloud Platform",
-        description: "Developed a cloud-based platform for pharmaceutical data management and analytics.",
-        technologies: ["Java", "Spring Boot", "AWS"],
-        highlights: "Secure, scalable data management solution for pharmaceutical industry"
+        name: "Compliance Copilot",
+        description: "AI-powered compliance assistant for SaaS startups. Automates compliance workflows and helps navigate regulatory requirements.",
+        technologies: ["TypeScript", "AI/ML", "SaaS"],
+        highlights: "AI-powered automation for SaaS compliance workflows"
       },
       {
-        name: "Banking Microservices App",
-        description: "Built a microservices-based banking application with a scalable architecture",
-        technologies: ["React", "Node.js", "Docker"],
-        highlights: "Modular design with high availability and fault tolerance"
+        name: "Uber Clone",
+        description: "Full Stack Uber Clone with Spring Boot, React Native, and ML Microservice. Real-time ride-sharing application with driver-rider matching.",
+        technologies: ["Spring Boot", "React Native", "TypeScript", "ML Microservice"],
+        highlights: "Full-stack ride-sharing platform with ML-powered matching"
       },
       {
-        name: "Retail Analytics Dashboard",
-        description: "Created an analytics dashboard for retail data visualization and reporting",
-        technologies: ["Python", "Flask", "Javascript"],
-        highlights: "Interactive visualizations and real-time analytics capabilities"
-      },
-      {
-        name: "Personal Portfolio Website",
-        description: "Designed and developed this responsive portfolio website with modern UI/UX principles",
-        technologies: ["React", "TailwindCSS", "Vite"],
-        highlights: "Clean design with dark/light modes and interactive elements"
-      },
-      {
-        name: "AI-Powered Image Generator",
-        description: "Created a web application that uses machine learning to generate custom images based on text prompts",
-        technologies: ["Python", "TensorFlow", "React", "Flask"],
-        highlights: "Integration with state-of-the-art image generation models"
+        name: "Turbo Auto Rentals",
+        description: "Automated car rental platform with streamlined booking and management system.",
+        technologies: ["TypeScript", "Full Stack"],
+        highlights: "Streamlined car rental booking and management platform"
       }
     ],
     latestProject: {
@@ -271,7 +229,7 @@ export const AIChatBubble = ({ isDarkMode }) => {
       `Deepak's latest project is a ${portfolioContent.latestProject.name}.\n\nIt's ${portfolioContent.latestProject.description}\n\nTech stack: ${portfolioContent.latestProject.technologies.join(', ')}\n\nHighlights: ${portfolioContent.latestProject.highlights}`
     ],
     skills: [
-      `Deepak is skilled in:\n\n• Frontend: ${portfolioContent.techStack.frontend.join(', ')}\n• Backend: ${portfolioContent.techStack.backend.join(', ')}\n• DevOps: ${portfolioContent.techStack.devops.join(', ')}\n• Cloud: ${portfolioContent.techStack.cloud.join(', ')}\n• Databases: ${portfolioContent.techStack.databases.join(', ')}\n• Other: ${portfolioContent.techStack.other.join(', ')}\n\nNeed any details on these?`
+      `Deepak is skilled in:\n\n• Languages: ${portfolioContent.techStack.languages.join(', ')}\n• Frontend: ${portfolioContent.techStack.frontend.join(', ')}\n• Backend: ${portfolioContent.techStack.backend.join(', ')}\n• Cloud & DevOps: ${portfolioContent.techStack.devops.join(', ')}\n• Messaging & Databases: ${portfolioContent.techStack.databases.join(', ')}\n• Testing & Monitoring: ${portfolioContent.techStack.testing.join(', ')}\n\nNeed any details on these?`
     ],
     specialization: [
       `Deepak specializes in:\n\n• ${portfolioContent.specializations.join('\n• ')}\n\nWhich area are you most interested in?`
@@ -280,11 +238,11 @@ export const AIChatBubble = ({ isDarkMode }) => {
       `Deepak earned his Master's degree in Information Technology and Management from Illinois Institute of Technology.`
     ],
     experience: [
-      `Deepak's work experience includes:\n\n• ${portfolioContent.workExperience[0].position} at ${portfolioContent.workExperience[0].company} (${portfolioContent.workExperience[0].duration})\n  - ${portfolioContent.workExperience[0].responsibilities.join('\n  - ')}\n\n• ${portfolioContent.workExperience[1].position} at ${portfolioContent.workExperience[1].company} (${portfolioContent.workExperience[1].duration})\n  - ${portfolioContent.workExperience[1].responsibilities.join('\n  - ')}\n\n• ${portfolioContent.workExperience[2].position} at ${portfolioContent.workExperience[2].company} (${portfolioContent.workExperience[2].duration})\n  - ${portfolioContent.workExperience[2].responsibilities.join('\n  - ')}\n\n• ${portfolioContent.workExperience[3].position} at ${portfolioContent.workExperience[3].company} (${portfolioContent.workExperience[3].duration})\n  - ${portfolioContent.workExperience[3].responsibilities.join('\n  - ')}\n\n• ${portfolioContent.workExperience[4].position} at ${portfolioContent.workExperience[4].company} (${portfolioContent.workExperience[4].duration})\n  - ${portfolioContent.workExperience[4].responsibilities.join('\n  - ')}\n\nWould you like to know more about a specific role?`,
+      `Deepak's work experience includes:\n\n• ${portfolioContent.workExperience[0].position} at ${portfolioContent.workExperience[0].company} (${portfolioContent.workExperience[0].duration})\n  - ${portfolioContent.workExperience[0].responsibilities.join('\n  - ')}\n\n• ${portfolioContent.workExperience[1].position} at ${portfolioContent.workExperience[1].company} (${portfolioContent.workExperience[1].duration})\n  - ${portfolioContent.workExperience[1].responsibilities.join('\n  - ')}\n\nWould you like to know more about a specific role?`,
     ],
     contact: [
-      "You can contact Deepak directly at deepakreddyiitc1234@gmail.com. Do you need any other information?",
-      "Deepak's email is deepakreddyiitc1234@gmail.com. Feel free to reach out to him directly!"
+      "You can contact Deepak directly at kilarudeepakreddy@gmail.com. Do you need any other information?",
+      "Deepak's email is kilarudeepakreddy@gmail.com. Feel free to reach out to him directly!"
     ],
     resume: [
       "I'd be happy to help you view Deepak's resume! You can access it directly using the Resume button in the navigation bar, or I can open it in Google Drive for you now.",
@@ -1141,7 +1099,7 @@ export const AIChatBubble = ({ isDarkMode }) => {
 Here are some facts about Deepak that you should use when answering questions about him:
 
 ABOUT:
-Deepak is a Java Full Stack Developer based in Chicago, IL.
+Deepak is a Software Engineer based in San Antonio, TX.
 
 EDUCATION:
 - Deepak earned his Master's degree in Information Technology and Management from Illinois Institute of Technology.
@@ -1157,30 +1115,15 @@ SKILLS:
 - Other: Agile SDLC, Scrum, Kanban, Waterfall, JIRA, Spark, Splunk, ELK Stack
 
 WORK EXPERIENCE:
-1. USAA (May 2025 - Present) - Java Full Stack Developer
-   - Developing and maintaining enterprise Java applications with Spring Boot and microservices architecture
-   - Implementing and managing AWS cloud infrastructure including EC2, S3, Lambda, and RDS services
-   - Managing DevOps processes using GitLab CI/CD pipelines, Terraform for infrastructure as code, and container orchestration
+1. USAA (Jan 2024 - Present) - Software Engineer
+   - Engineered scalable backend services (Java, Python, REST, GraphQL) on AWS sustaining millions of daily requests with 99.99% availability, and developed performant frontend workflows (React, Redux, TypeScript) improving page latency by 28%
+   - Orchestrated event-driven architecture with Kafka, PostgreSQL, and Redis, offloading synchronous API paths by 35% during peak traffic. Standardized IaC with Terraform and Docker, reducing environment provisioning by 40%
+   - Enforced production quality through Cypress, WebdriverIO, and unit tests in CI/CD pipelines, preventing 45% of regressions. Operationalized observability with Datadog and ELK Stack, achieving p95 response times under 200ms
    
-2. AbbVie (Feb 2024 - Jan 2025) - Java Full Stack Developer
-   - Developing and maintaining enterprise Java applications with Spring Boot
-   - Building responsive front-end interfaces using modern JavaScript frameworks
-   - Led the migration of monolithic applications to microservices architecture, improving scalability and maintainability
-   
-3. BMO Harris Bank (May 2023 - Jan 2024) - Java Full Stack Developer
-   - Developed and maintained banking applications using Java, Spring, and Angular
-   - Implemented RESTful APIs for financial data processing and transaction management
-   - Collaborated with business stakeholders to translate requirements into technical solutions
-   
-4. Airtel (Sep 2021 - Dec 2022) - Java Full Stack Developer
-   - Built and maintained telecommunications applications using Java and related technologies
-   - Implemented front-end interfaces with React for customer-facing applications
-   - Optimized database queries and enhanced application performance for high-traffic services
-   
-5. CIBC Bank (Jun 2020 - Jun 2021) - Java Developer
-   - Developed banking software solutions using Java and Spring framework
-   - Created and maintained database schemas, stored procedures, and queries
-   - Implemented unit and integration tests to ensure application reliability
+2. Dell Technologies (Dec 2020 - Dec 2022) - Software Engineer
+   - Delivered full-stack applications (Java, Spring Boot, React, REST APIs) handling thousands of concurrent sessions. Implemented Node.js and Python integrations connecting internal platforms, reducing manual processing by 20%
+   - Introduced Kafka message-based processing and event-driven workflows with Postgres and DynamoDB, reducing request latency by 27% and cutting database contention by 35% during peak loads
+   - Implemented Selenium UI tests and backend validation suites, decreasing post-release defects by 38% across successive deployments
 
 When answering questions about Deepak's education, always mention that he earned his Master's degree in Information Technology and Management from Illinois Institute of Technology.` 
         }
@@ -1293,8 +1236,8 @@ When answering questions about Deepak's education, always mention that he earned
                 lifespanCount: 5,
                 parameters: {
                   data: JSON.stringify({
-                    name: 'Deepak Reddy',
-                    location: 'Chicago, IL',
+                    name: 'Deepak Reddy Kilaru',
+                    location: 'San Antonio, TX',
                     role: 'Software Developer'
                   })
                 }
@@ -1372,7 +1315,7 @@ When answering questions about Deepak's education, always mention that he earned
     if (lowerInput.includes('where is he based') || lowerInput.includes('location') || lowerInput.includes('where does deepak live')) {
       return {
         isAction: true,
-        response: "Deepak is currently based in Chicago, Illinois."
+        response: "Deepak is currently based in San Antonio, Texas."
       };
     }
     

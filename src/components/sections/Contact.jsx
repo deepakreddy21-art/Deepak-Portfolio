@@ -27,7 +27,12 @@ export const Contact = ({ isDarkMode }) => {
   
   // Initialize EmailJS once when component mounts
   useEffect(() => {
-    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY); // Initialize with your public key from env
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    if (!publicKey) {
+      console.error('EmailJS Public Key is missing! Check your .env file.');
+      return;
+    }
+    emailjs.init(publicKey); // Initialize with your public key from env
   }, []);
 
   // Validate form fields
@@ -126,10 +131,29 @@ export const Contact = ({ isDarkMode }) => {
     setIsSubmitting(true);
     setSubmitError(false);
     
+    // Check if environment variables are loaded
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID_CONTACT;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CONTACT;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    
+    if (!serviceId || !templateId || !publicKey) {
+      console.error('EmailJS configuration missing:', {
+        serviceId: !!serviceId,
+        templateId: !!templateId,
+        publicKey: !!publicKey
+      });
+      setIsSubmitting(false);
+      setSubmitError(true);
+      setTimeout(() => {
+        setSubmitError(false);
+      }, 5000);
+      return;
+    }
+    
     // Send email using EmailJS
     emailjs.send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID_CONTACT, // Service ID from env
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CONTACT, // Template ID from env
+      serviceId,
+      templateId,
       {
         name: formData.name,
         email: formData.email,
@@ -163,6 +187,10 @@ export const Contact = ({ isDarkMode }) => {
     })
     .catch((error) => {
       console.error('Failed to send email:', error);
+      console.error('Error details:', {
+        text: error.text,
+        status: error.status
+      });
       setIsSubmitting(false);
       setSubmitError(true);
       

@@ -69,7 +69,7 @@ export const Terminal = ({ isDarkMode, toggleDarkMode }) => {
     contact: {
       email: "kilarudeepakreddy@gmail.com",
       github: "github.com/deepakreddy21-art",
-      linkedin: "linkedin.com/in/deepak-reddy-3a911924b",
+      linkedin: "www.linkedin.com/in/kdr1234",
       instagram: "instagram.com/deepakreddy_22",
       twitter: "twitter.com/kdr_9837"
     },

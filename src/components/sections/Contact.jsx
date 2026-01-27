@@ -28,11 +28,28 @@ export const Contact = ({ isDarkMode }) => {
   // Initialize EmailJS once when component mounts
   useEffect(() => {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID_CONTACT;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CONTACT;
+    
+    console.log('EmailJS Configuration Check:', {
+      publicKey: publicKey ? '✓ Loaded' : '✗ Missing',
+      serviceId: serviceId ? '✓ Loaded' : '✗ Missing',
+      templateId: templateId ? '✓ Loaded' : '✗ Missing'
+    });
+    
     if (!publicKey) {
       console.error('EmailJS Public Key is missing! Check your .env file.');
+      console.error('Make sure .env file exists in the root directory and you restarted the dev server.');
       return;
     }
+    
+    if (!serviceId || !templateId) {
+      console.error('EmailJS Service ID or Template ID is missing!');
+      return;
+    }
+    
     emailjs.init(publicKey); // Initialize with your public key from env
+    console.log('EmailJS initialized successfully');
   }, []);
 
   // Validate form fields
@@ -188,9 +205,25 @@ export const Contact = ({ isDarkMode }) => {
     .catch((error) => {
       console.error('Failed to send email:', error);
       console.error('Error details:', {
-        text: error.text,
-        status: error.status
+        text: error.text || error.message,
+        status: error.status || 'Unknown',
+        serviceId: serviceId,
+        templateId: templateId
       });
+      
+      // Show more specific error message
+      let errorMessage = 'There was an error sending your message. Please try again or email me directly.';
+      if (error.text) {
+        console.error('EmailJS Error:', error.text);
+        if (error.text.includes('Invalid template ID')) {
+          errorMessage = 'Template ID is invalid. Please check your EmailJS template configuration.';
+        } else if (error.text.includes('Invalid service ID')) {
+          errorMessage = 'Service ID is invalid. Please check your EmailJS service configuration.';
+        } else if (error.text.includes('Invalid public key')) {
+          errorMessage = 'Public key is invalid. Please check your EmailJS configuration.';
+        }
+      }
+      
       setIsSubmitting(false);
       setSubmitError(true);
       

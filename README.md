@@ -83,7 +83,7 @@ The AI chatbot can answer questions about my background, skills, and projects. T
 ## Contact
 
 - Email: deepakreddyiitc1234@gmail.com
-- LinkedIn: linkedin.com/in/deepak-reddy-3a911924b
+- LinkedIn: linkedin.com/in/kdr1234
 - GitHub: github.com/deepakreddy21
 - Instagram: instagram.com/deepakreddy_22
 - Twitter: twitter.com/kdr_9837
